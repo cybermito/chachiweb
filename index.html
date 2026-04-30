@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera Web</title>
+    <!-- Esto es un comentario -->
+    <!-- Estas dos etiquetas son de configuración dentro del head para cargar archivos de estilos y javascript -->
+    <!-- Link para cargar hoja de estilos -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- script src para cargar javascript -->
+    <script src="script.js" defer></script>
+
+    <!-- Estilos en el head -->
+    <!--
+    <style>
+      p {
+        background: lightgoldenrodyellow;
+        color: grey;
+        border: 1px solid greenyellow;
+      }
+    </style>
+  --></head>
+  <body>
+    <!-- Dentro del body va toda la parte visible de la web -->
+    <!-- Etiquetas de texto -->
+    <!-- Encabezados 
+    h1, h2, h3, h4, h5, h6 
+    -->
+    <!-- Aplicando estilos en línea -->
+    <h1 id="main-title" style="background: black; color: greenyellow">
+      Título principal de la página
+    </h1>
+    <h2 id="sub-title">Subtítulo de la página</h2>
+
+    <!-- Párrafo -->
+    <p class="description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, nam
+      deleniti sequi consectetur excepturi voluptatem rerum architecto aliquid
+      quidem ullam in earum iusto porro culpa quae dolores vero, perferendis
+      doloremque?
+    </p>
+
+    <p>
+      Este texto es <strong>importante</strong>, aparece en negrita pero no es
+      diseño
+    </p>
+    <p class="description">
+      Este otro texto también es <em>importante</em> aparece en ítalica pero no
+      es diseño.
+    </p>
+
+    <!-- Enlaces -->
+    <a href="https://atigra.es" target="_blank">Enlace a Atigra Makers</a>
+    <a href="#familia-skywalker">Familia Skywalker</a>
+    <a href="#maestros">Maestros</a>
+
+    <!-- Imágenes -->
+    <!-- Imágen externa -->
+    <img
+      src="https://images.pexels.com/photos/7900585/pexels-photo-7900585.jpeg"
+      alt="Imágen con Darth Vader bailando con los Storm Troppers."
+      width="80%"
+    />
+
+    <!-- Imágen local -->
+    <img
+      src="img/pexels-lucas-ianiak-748901-4310574.jpg"
+      alt="Imágen con el casco de Darth Vader."
+      width="80%"
+    />
+
+    <!-- Listas  -->
+    <!-- Ordenadas -->
+    <h4 id="familia-skywalker">Lista ordenada</h4>
+    <ol>
+      <li>Darth Vader</li>
+      <li>Anakin Skywalker</li>
+      <li>Luke Skywalker</li>
+      <li>Leia Skywalker</li>
+    </ol>
+
+    <!-- Desordenadas -->
+    <h4 id="maestros">Lista desordenada</h4>
+    <ul>
+      <li>Maestro Yoda</li>
+      <li>Obi Wan Kenobi</li>
+      <li>Rey</li>
+    </ul>
+
+    <!-- Atributos Globales -->
+    <!--
+      Atributo ID (id)
+      Sintaxis: <open_label id="nombre-id-unico">
+      
+      Descripción: Generamos una única identidad al elemento html para dirigirnos directamente a el. Puede ser desde CSS, href, javascript, etc...
+
+      Atibuto class
+      Sintaxis: <open_label class="nombre-clase">
+      
+      Descripción: es un identificador de grupo, se puede especificar el mismo nombre a varios elementos o grupo de elementos del html. Ideal para dar estilos de forma uniforme o asignarle cambios desde javascript.
+     -->
+
+    <!-- Estructuración del contenido -->
+    <!-- Contenedores -->
+    <!--
+        Etiqueta <div> Contenedor de almacenamiento para agrupar bloques de contenido.
+     -->
+    <h4>Etiqueta div para estructurar</h4>
+    <div class="article">
+      <div class="figure">
+        if valor_ldr < 7000: led.high() else: led.low()
+        <img
+          src="img/pexels-lucas-ianiak-748901-4310574.jpg"
+          alt="Descripción de la imágen"
+          width="200px"
+        />
+      </div>
+      <h4>Título del post</h4>
+      <p>Párrafo del artículo.</p>
+    </div>
+
+    <!-- span - se usa para los detalles, agrupa contenido en línea dentro de otros elementos.
+    Sirve para aplicar estilos a fragmentos de texto o pequeños componentes sin alterar el flujo del documento. 
+    -->
+    <p>
+      Esto es un <span class="texto-destacado">texto destacado</span> dentro de
+      un párrafo.
+    </p>
+
+    <!-- HTML Semantico -->
+    <header>
+      <figure id="logo">
+        <img src="" alt="Logo" />
+      </figure>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Blog</li>
+          <li>About us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <figure id="hero-background">
+          <img src="" alt="Background Hero" />
+        </figure>
+
+        <div id="hero-text">
+          <h1>Título de la página</h1>
+        </div>
+      </section>
+
+      <section id="blog">
+        <article>
+          <figure>
+            <img src="" alt="Imagen del artículo" />
+          </figure>
+          <h3>Título del post</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+            aliquid beatae nemo tempore. Pariatur laborum molestias, ut
+            architecto ipsum inventore eligendi ipsam fugiat voluptates maxime
+            accusamus qui iure cupiditate ex!
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="" alt="Imagen del artículo" />
+          </figure>
+          <h3>Título del post</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+            aliquid beatae nemo tempore. Pariatur laborum molestias, ut
+            architecto ipsum inventore eligendi ipsam fugiat voluptates maxime
+            accusamus qui iure cupiditate ex!
+          </p>
+        </article>
+        if valor_ldr < 7000: led.high() else: led.low()
+      </section>
+    </main>
+    <footer>
+      <div id="left">
+        <h4>Suscríbete</h4>
+        <input type="email" placeholder="Escribe tu email" />
+      </div>
+      <div id="right">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li>Github</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Formularios -->
+    <!-- Recopilar información del usuario -->
+    <h3>Formulario</h3>
+    <form action="script.js" method="post">
+      <label for="name">Nombre:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Escribe tu nombre"
+      />
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Escribe tu email"
+      />
+
+      <label for="password">Contraseña: </label>
+      <input type="password" id="password" name="password" />
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar</button>
+    </form>
+  </body>
+</html>

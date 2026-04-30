@@ -1,0 +1,19 @@
+/*
+Comentarios en CSS
+*/
+
+p {
+  padding: 5px;
+  background: lightgoldenrodyellow;
+  color: grey;
+  border: 2px solid greenyellow;
+}
+
+a {
+  text-decoration: none;
+  font-family: monospace;
+  color: rgb(246, 32, 75);
+  padding: 3px;
+  background-color: lightgray;
+  margin: 5px;
+}
